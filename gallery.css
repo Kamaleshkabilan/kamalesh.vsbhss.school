@@ -16,22 +16,22 @@
   transition: all 1s;
 }
 .gallery1 > div:nth-child(1){   
-  background: url(/13.jpg);
+  background: url(13.jpg);
   background-position: center;
   background-size: cover;
 }
 .gallery1 > div:nth-child(2){   
-  background: url(/14.jpg);
+  background: url(14.jpg);
   background-position: center;
   background-size: cover;
 }
 .gallery1 > div:nth-child(3){   
-  background: url(/15.jpg);
+  background: url(15.jpg);
   background-position: center;
   background-size: cover;
 }
 .gallery1 > div:nth-child(4){   
-  background: url(/10.jpg);
+  background: url(10.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -564,23 +564,23 @@ body {
 }
 @keyframes slider {
   0%{
-    background: url(/10.jpg)no-repeat center;
+    background: url(10.jpg)no-repeat center;
     background-size: cover;
   }
   30%{
-    background: url(/13.jpg)no-repeat center;
+    background: url(13.jpg)no-repeat center;
     background-size: cover;
   }
   60% {
-    background: url(/14.jpg)no-repeat center;
+    background: url(14.jpg)no-repeat center;
     background-size: cover;
   }
   80% {
-    background: url(/15.jpg)no-repeat center;
+    background: url(15.jpg)no-repeat center;
     background-size: cover;
   }
   100% {
-    background: url(/2.jpg)no-repeat center;
+    background: url(2.jpg)no-repeat center;
     background-size: cover;
   }
  
