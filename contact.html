@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+  <title>
+    VSBHSS
+  </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+     
+    <section class="container">
+      <header>Get in Touch</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+           
+        <div class="input-box address">
+          <label>Description</label>
+          <textarea type="text" placeholder="Message" cols="23" rows="10" required/ >
+</textarea>
+     
+          </div>
+        </div>
+        <button>Send</button>
+      </form>
+      <pre>
+        <h4>
+        OUR CONTACT
+          
+        VS Boys School
+        Kamalalayam South
+        Bank Road,
+        Thiruvarur, 
+        Tamil Nadu 610001
+         
+    📞 Phone Number
+        04366 290 200
+          
+    📧  E-mail
+     <a href="">admissions@vsbhss.com</a>  
+     <a href="">hm@vsbhss.com</a>
+       
+          
+    🌐  Website
+        vsbhss.com
+        </h4>
+        </pre>
+    </section>
+    <a href="index.html">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
+</a>
+
+     <script>
+
+
+        var sidenav=document.querySelector(".side-navbar")
+
+function showNavbar() {
+  sidenav.style.left="0"
+  
+}
+function closeNavbar(){
+    sidenav.style.left="-60%"
+
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// Get the button:
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+ </script>
+
+
+  </body>
+</html>
